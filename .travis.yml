@@ -6,7 +6,7 @@ os: linux
 sudo: required
 
 vm:
-  size: 2x-large
+  size: x-large
 
 language: python
 python:
