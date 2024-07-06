@@ -1,0 +1,22 @@
+name: Yocto Build
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: [self-hosted, linux, amd64]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Build Yocto image
+        run: |
+          source poky/oe-init-build-env .
+          bitbake core-image-minimal
