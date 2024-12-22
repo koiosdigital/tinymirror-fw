@@ -1,3 +1,0 @@
-[b4]
-  send-series-to = yocto-patches@lists.yoctoproject.org
-  send-prefixes = meta-rockchip

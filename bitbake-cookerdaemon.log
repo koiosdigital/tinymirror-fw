@@ -4983,3 +4983,1058 @@ Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
 84 17:35:56.239759 Exiting (socket: True)
 84 17:35:56.241205 Exiting as we could obtain the lock
 sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+89 17:37:45.365579 --- Starting bitbake server pid 89 at 2024-12-22 17:37:45.365561 ---
+89 17:37:45.366097 Started bitbake server pid 89
+89 17:37:45.366221 Entering server connection loop
+89 17:37:45.366234 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+89 17:37:45.366635 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+89 17:37:45.367098 Processing Client
+89 17:37:45.367129 Connecting Client
+89 17:37:45.367354 Running command ['setFeatures', [2, 1]]
+89 17:37:45.367374 Sending reply (None, None)
+89 17:37:45.367410 Command Completed (socket: True)
+89 17:37:45.367721 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+89 17:37:45.600459 Base config valid
+89 17:37:45.611919 Sending reply (None, None)
+89 17:37:45.612033 Command Completed (socket: True)
+89 17:37:45.612253 Running command ['getVariable', 'BBINCLUDELOGS']
+89 17:37:45.612308 Sending reply ('yes', None)
+89 17:37:45.612336 Command Completed (socket: True)
+89 17:37:45.612367 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+89 17:37:45.612381 Sending reply (None, None)
+89 17:37:45.612397 Command Completed (socket: True)
+89 17:37:45.612418 Running command ['getSetVariable', 'BB_CONSOLELOG']
+89 17:37:45.612489 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222173745.log', None)
+89 17:37:45.612510 Command Completed (socket: True)
+89 17:37:45.612609 Running command ['getSetVariable', 'BB_LOGCONFIG']
+89 17:37:45.612623 Sending reply (None, None)
+89 17:37:45.612640 Command Completed (socket: True)
+89 17:37:45.613986 Running command ['getUIHandlerNum']
+89 17:37:45.614033 Sending reply (1, None)
+89 17:37:45.614091 Command Completed (socket: True)
+89 17:37:45.614338 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+89 17:37:45.614383 Sending reply (True, None)
+89 17:37:45.614440 Command Completed (socket: True)
+89 17:37:45.614590 Running command ['getVariable', 'BB_DEFAULT_TASK']
+89 17:37:45.614630 Sending reply ('build', None)
+89 17:37:45.614686 Command Completed (socket: True)
+89 17:37:45.614817 Running command ['setConfig', 'cmd', 'build']
+89 17:37:45.614853 Sending reply (None, None)
+89 17:37:45.614897 Command Completed (socket: True)
+89 17:37:45.615065 Running command ['buildTargets', ['u-boot'], 'build']
+89 17:37:45.615123 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x72f641456100>>
+89 17:37:45.615133 Sending reply (True, None)
+89 17:37:45.615181 Command Completed (socket: True)
+89 17:37:45.670477 Parsing started
+89 17:37:45.771526 Parse cache valid
+89 17:38:41.192161 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x72f63584ab80>
+89 17:38:41.192198 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x72f641456100>>
+89 17:38:46.819399 Running command ['stateShutdown']
+89 17:38:46.819529 Sending reply (None, None)
+89 17:38:46.819606 Command Completed (socket: True)
+89 17:38:47.983726 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x72f63584ab80> at idleFinish
+89 17:38:48.234631 Processing Client
+89 17:38:48.234725 Disconnecting Client (socket: True)
+89 17:38:48.234986 Parse cache invalidated
+89 17:38:48.235002 No timeout, exiting.
+89 17:38:48.335327 Exiting (socket: True)
+89 17:38:48.338944 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+3471 17:39:40.776145 --- Starting bitbake server pid 3471 at 2024-12-22 17:39:40.776127 ---
+3471 17:39:40.776641 Started bitbake server pid 3471
+3471 17:39:40.776756 Entering server connection loop
+3471 17:39:40.776767 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+3471 17:39:40.777127 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+3471 17:39:40.777416 Processing Client
+3471 17:39:40.777464 Connecting Client
+3471 17:39:40.777630 Running command ['setFeatures', [2, 1]]
+3471 17:39:40.777653 Sending reply (None, None)
+3471 17:39:40.777682 Command Completed (socket: True)
+3471 17:39:40.778035 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+3471 17:39:40.991192 Base config valid
+3471 17:39:41.002363 Sending reply (None, None)
+3471 17:39:41.002474 Command Completed (socket: True)
+3471 17:39:41.002599 Running command ['getVariable', 'BBINCLUDELOGS']
+3471 17:39:41.002658 Sending reply ('yes', None)
+3471 17:39:41.002686 Command Completed (socket: True)
+3471 17:39:41.002739 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+3471 17:39:41.002755 Sending reply (None, None)
+3471 17:39:41.002773 Command Completed (socket: True)
+3471 17:39:41.002808 Running command ['getSetVariable', 'BB_CONSOLELOG']
+3471 17:39:41.002861 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222173940.log', None)
+3471 17:39:41.002881 Command Completed (socket: True)
+3471 17:39:41.002919 Running command ['getSetVariable', 'BB_LOGCONFIG']
+3471 17:39:41.002935 Sending reply (None, None)
+3471 17:39:41.002951 Command Completed (socket: True)
+3471 17:39:41.003925 Running command ['getUIHandlerNum']
+3471 17:39:41.003946 Sending reply (1, None)
+3471 17:39:41.003974 Command Completed (socket: True)
+3471 17:39:41.004030 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+3471 17:39:41.004044 Sending reply (True, None)
+3471 17:39:41.004063 Command Completed (socket: True)
+3471 17:39:41.004100 Running command ['getVariable', 'BB_DEFAULT_TASK']
+3471 17:39:41.004117 Sending reply ('build', None)
+3471 17:39:41.004132 Command Completed (socket: True)
+3471 17:39:41.004159 Running command ['setConfig', 'cmd', 'build']
+3471 17:39:41.004173 Sending reply (None, None)
+3471 17:39:41.004187 Command Completed (socket: True)
+3471 17:39:41.004219 Running command ['buildTargets', ['u-boot'], 'build']
+3471 17:39:41.004245 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7fefe91fd100>>
+3471 17:39:41.004248 Sending reply (True, None)
+3471 17:39:41.004262 Command Completed (socket: True)
+3471 17:39:41.083285 Parsing started
+3471 17:39:42.318932 Parse cache valid
+3471 17:39:43.706484 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7fefd7fe25e0>
+3471 17:39:43.706520 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7fefe91fd100>>
+3471 17:40:47.432835 Running command ['ping']
+3471 17:40:47.465999 Sending reply ('Still alive!', None)
+3471 17:40:47.485576 Command Completed (socket: True)
+3471 17:41:47.512630 Running command ['ping']
+3471 17:41:47.512687 Sending reply ('Still alive!', None)
+3471 17:41:47.512788 Command Completed (socket: True)
+3471 17:42:38.619256 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7fefd7fe25e0> at idleFinish
+3471 17:42:38.875527 Processing Client
+3471 17:42:38.877488 Disconnecting Client (socket: True)
+3471 17:42:38.889244 Parse cache invalidated
+3471 17:42:38.889471 No timeout, exiting.
+3471 17:42:38.989766 Exiting (socket: True)
+3471 17:42:39.101271 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4165 17:51:33.257871 --- Starting bitbake server pid 4165 at 2024-12-22 17:51:33.257848 ---
+4165 17:51:33.258460 Started bitbake server pid 4165
+4165 17:51:33.258603 Entering server connection loop
+4165 17:51:33.258615 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+4165 17:51:33.258977 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4165 17:51:33.259348 Processing Client
+4165 17:51:33.259365 Connecting Client
+4165 17:51:33.259506 Running command ['setFeatures', [2, 1]]
+4165 17:51:33.259525 Sending reply (None, None)
+4165 17:51:33.259556 Command Completed (socket: True)
+4165 17:51:33.259752 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+4165 17:51:33.509988 Base config valid
+4165 17:51:33.524040 Sending reply (None, None)
+4165 17:51:33.524188 Command Completed (socket: True)
+4165 17:51:33.524346 Running command ['getVariable', 'BBINCLUDELOGS']
+4165 17:51:33.524428 Sending reply ('yes', None)
+4165 17:51:33.524481 Command Completed (socket: True)
+4165 17:51:33.524660 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+4165 17:51:33.524698 Sending reply (None, None)
+4165 17:51:33.524743 Command Completed (socket: True)
+4165 17:51:33.524842 Running command ['getSetVariable', 'BB_CONSOLELOG']
+4165 17:51:33.524940 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222175133.log', None)
+4165 17:51:33.524984 Command Completed (socket: True)
+4165 17:51:33.525039 Running command ['getSetVariable', 'BB_LOGCONFIG']
+4165 17:51:33.525066 Sending reply (None, None)
+4165 17:51:33.525101 Command Completed (socket: True)
+4165 17:51:33.526767 Running command ['getUIHandlerNum']
+4165 17:51:33.526796 Sending reply (1, None)
+4165 17:51:33.526840 Command Completed (socket: True)
+4165 17:51:33.526914 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+4165 17:51:33.526945 Sending reply (True, None)
+4165 17:51:33.526982 Command Completed (socket: True)
+4165 17:51:33.527035 Running command ['getVariable', 'BB_DEFAULT_TASK']
+4165 17:51:33.527059 Sending reply ('build', None)
+4165 17:51:33.527091 Command Completed (socket: True)
+4165 17:51:33.527139 Running command ['setConfig', 'cmd', 'build']
+4165 17:51:33.527167 Sending reply (None, None)
+4165 17:51:33.527198 Command Completed (socket: True)
+4165 17:51:33.527250 Running command ['buildTargets', ['u-boot'], 'build']
+4165 17:51:33.527295 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7e42f0de3100>>
+4165 17:51:33.527303 Sending reply (True, None)
+4165 17:51:33.527333 Command Completed (socket: True)
+4165 17:51:33.563123 Parsing started
+Process Parser-8:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/cooker.py", line 2028, in run
+    self.realrun()
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/cooker.py", line 2084, in realrun
+    self.results.join_thread()
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 148, in join_thread
+    self._jointhread()
+  File "/usr/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 195, in _finalize_join
+    thread.join()
+  File "/usr/lib/python3.8/threading.py", line 1011, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/cooker.py", line 2016, in catch_sig
+    self.handle_sig(signum, frame)
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/cooker.py", line 2023, in handle_sig
+    signal.default_int_handler(signum, frame)
+KeyboardInterrupt
+4165 17:51:33.652843 Parse cache valid
+4165 17:51:38.361299 Running command ['stateShutdown']
+4165 17:51:38.373878 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7e42f0de3100>> at idleFinish
+4165 17:51:57.012142 Sending reply (None, None)
+4165 17:51:57.012794 Exception in server main event loop running command [] (Traceback (most recent call last):
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/server/process.py", line 298, in main
+    self.command_channel_reply.send(reply)
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/server/process.py", line 890, in send
+    self._send(obj)
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/server/process.py", line 869, in _send
+    self.writer.send_bytes(obj)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+)
+4165 17:51:57.013296 Queuing [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>, <socket.socket fd=5, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>, <bb.server.process.ConnectionReader object at 0x7e42f0de3f70>] ([])
+4165 17:51:57.013318 Processing Client
+4165 17:51:57.013362 Disconnecting Client (socket: True)
+4165 17:51:57.013549 Parse cache invalidated
+4165 17:51:57.013568 Starting new client
+4165 17:51:57.013586 Processing Client
+4165 17:51:57.013617 Connecting Client
+4165 17:51:57.013994 Running command ['setFeatures', [2, 1]]
+4165 17:51:57.014034 Sending reply (None, None)
+4165 17:51:57.014096 Command Completed (socket: True)
+4165 17:51:57.014462 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'kernel']]
+4165 17:51:57.043992 Sending reply (None, None)
+4165 17:51:57.044120 Command Completed (socket: True)
+4165 17:51:57.044394 Running command ['getVariable', 'BBINCLUDELOGS']
+4165 17:51:57.044439 Sending reply ('yes', None)
+4165 17:51:57.044508 Command Completed (socket: True)
+4165 17:51:57.044647 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+4165 17:51:57.044677 Sending reply (None, None)
+4165 17:51:57.044719 Command Completed (socket: True)
+4165 17:51:57.044866 Running command ['getSetVariable', 'BB_CONSOLELOG']
+4165 17:51:57.045000 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222175133.log', None)
+4165 17:51:57.045055 Command Completed (socket: True)
+4165 17:51:57.045200 Running command ['getSetVariable', 'BB_LOGCONFIG']
+4165 17:51:57.045272 Sending reply (None, None)
+4165 17:51:57.045318 Command Completed (socket: True)
+4165 17:51:57.046626 Running command ['getUIHandlerNum']
+4165 17:51:57.046638 Sending reply (3, None)
+4165 17:51:57.046660 Command Completed (socket: True)
+4165 17:51:57.046703 Running command ['setEventMask', 3, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+4165 17:51:57.046713 Sending reply (True, None)
+4165 17:51:57.046726 Command Completed (socket: True)
+4165 17:51:57.046751 Running command ['getVariable', 'BB_DEFAULT_TASK']
+4165 17:51:57.046764 Sending reply ('build', None)
+4165 17:51:57.046777 Command Completed (socket: True)
+4165 17:51:57.046796 Running command ['setConfig', 'cmd', 'build']
+4165 17:51:57.046804 Sending reply (None, None)
+4165 17:51:57.046816 Command Completed (socket: True)
+4165 17:51:57.046836 Running command ['buildTargets', ['kernel'], 'build']
+4165 17:51:57.046853 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7e42f0de3100>>
+4165 17:51:57.046856 Sending reply (True, None)
+4165 17:51:57.046867 Command Completed (socket: True)
+4165 17:51:57.074637 Parsing started
+4165 17:51:57.431276 Parse cache valid
+4165 17:52:27.059346 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7e42f0de3100>> at idleFinish
+4165 17:52:27.310216 Processing Client
+4165 17:52:27.310288 Disconnecting Client (socket: True)
+4165 17:52:27.310449 Parse cache invalidated
+4165 17:52:27.310458 No timeout, exiting.
+4165 17:52:27.410621 Exiting (socket: True)
+4165 17:52:27.413372 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4243 17:52:43.611631 --- Starting bitbake server pid 4243 at 2024-12-22 17:52:43.611616 ---
+4243 17:52:43.612082 Started bitbake server pid 4243
+4243 17:52:43.612196 Entering server connection loop
+4243 17:52:43.612207 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+4243 17:52:43.612614 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4243 17:52:43.613116 Processing Client
+4243 17:52:43.613144 Connecting Client
+4243 17:52:43.613292 Running command ['setFeatures', [2, 1]]
+4243 17:52:43.613311 Sending reply (None, None)
+4243 17:52:43.613339 Command Completed (socket: True)
+4243 17:52:43.613605 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'virtual/kernel']]
+4243 17:52:43.827918 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 77139 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 81008 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 106611 106612 123720 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 106612 
+Server will shut down after all clients exit.
+4243 17:52:43.840246 Sending reply (None, None)
+4243 17:52:43.840404 Command Completed (socket: True)
+4243 17:52:43.840625 Running command ['getVariable', 'BBINCLUDELOGS']
+4243 17:52:43.840713 Sending reply ('yes', None)
+4243 17:52:43.840763 Command Completed (socket: True)
+4243 17:52:43.840871 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+4243 17:52:43.840909 Sending reply (None, None)
+4243 17:52:43.840960 Command Completed (socket: True)
+4243 17:52:43.841028 Running command ['getSetVariable', 'BB_CONSOLELOG']
+4243 17:52:43.841150 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222175243.log', None)
+4243 17:52:43.841203 Command Completed (socket: True)
+4243 17:52:43.841253 Running command ['getSetVariable', 'BB_LOGCONFIG']
+4243 17:52:43.841281 Sending reply (None, None)
+4243 17:52:43.841314 Command Completed (socket: True)
+4243 17:52:43.842803 Running command ['getUIHandlerNum']
+4243 17:52:43.842832 Sending reply (1, None)
+4243 17:52:43.842878 Command Completed (socket: True)
+4243 17:52:43.842949 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+4243 17:52:43.842986 Sending reply (True, None)
+4243 17:52:43.843023 Command Completed (socket: True)
+4243 17:52:43.843079 Running command ['getVariable', 'BB_DEFAULT_TASK']
+4243 17:52:43.843103 Sending reply ('build', None)
+4243 17:52:43.843136 Command Completed (socket: True)
+4243 17:52:43.843180 Running command ['setConfig', 'cmd', 'build']
+4243 17:52:43.843205 Sending reply (None, None)
+4243 17:52:43.843236 Command Completed (socket: True)
+4243 17:52:43.843287 Running command ['buildTargets', ['virtual/kernel'], 'build']
+4243 17:52:43.843334 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7804c33bf100>>
+4243 17:52:43.843342 Sending reply (True, None)
+4243 17:52:43.843372 Command Completed (socket: True)
+4243 17:52:43.919235 Parsing started
+4243 17:52:45.149977 Parse cache valid
+4243 17:52:46.230352 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7804b62828b0>
+4243 17:52:46.230386 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7804c33bf100>>
+4243 17:54:48.903915 Running command ['ping']
+4243 17:54:48.904000 Sending reply ('Still alive!', None)
+4243 17:54:48.904092 Command Completed (socket: True)
+4243 17:55:49.071270 Running command ['ping']
+4243 17:55:49.071344 Sending reply ('Still alive!', None)
+4243 17:55:49.071609 Command Completed (socket: True)
+4243 17:56:49.244983 Running command ['ping']
+4243 17:56:49.245041 Sending reply ('Still alive!', None)
+4243 17:56:49.245133 Command Completed (socket: True)
+4243 17:57:49.401595 Running command ['ping']
+4243 17:57:49.401653 Sending reply ('Still alive!', None)
+4243 17:57:49.401743 Command Completed (socket: True)
+4243 17:59:02.416752 Running command ['ping']
+4243 17:59:02.416819 Sending reply ('Still alive!', None)
+4243 17:59:02.416927 Command Completed (socket: True)
+4243 18:00:02.627454 Running command ['ping']
+4243 18:00:02.627517 Sending reply ('Still alive!', None)
+4243 18:00:02.627620 Command Completed (socket: True)
+4243 18:01:02.781032 Running command ['ping']
+4243 18:01:02.781090 Sending reply ('Still alive!', None)
+4243 18:01:02.781162 Command Completed (socket: True)
+4243 18:02:02.856508 Running command ['ping']
+4243 18:02:02.856572 Sending reply ('Still alive!', None)
+4243 18:02:02.856672 Command Completed (socket: True)
+4243 18:04:09.792996 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7804b62828b0> at idleFinish
+4243 18:04:10.043814 Processing Client
+4243 18:04:10.043928 Disconnecting Client (socket: True)
+4243 18:04:10.044198 Parse cache invalidated
+4243 18:04:10.044207 No timeout, exiting.
+4243 18:04:10.144516 Exiting (socket: True)
+4243 18:04:10.147652 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+124980 18:04:31.788222 --- Starting bitbake server pid 124980 at 2024-12-22 18:04:31.788201 ---
+124980 18:04:31.788772 Started bitbake server pid 124980
+124980 18:04:31.788902 Entering server connection loop
+124980 18:04:31.788937 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+124980 18:04:31.789222 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+124980 18:04:31.789970 Processing Client
+124980 18:04:31.790001 Connecting Client
+124980 18:04:31.790162 Running command ['setFeatures', [2, 1]]
+124980 18:04:31.790183 Sending reply (None, None)
+124980 18:04:31.790213 Command Completed (socket: True)
+124980 18:04:31.790433 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+124980 18:04:31.998839 Base config valid
+124980 18:04:32.010745 Sending reply (None, None)
+124980 18:04:32.010847 Command Completed (socket: True)
+124980 18:04:32.011061 Running command ['getVariable', 'BBINCLUDELOGS']
+124980 18:04:32.011131 Sending reply ('yes', None)
+124980 18:04:32.011155 Command Completed (socket: True)
+124980 18:04:32.011182 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+124980 18:04:32.011195 Sending reply (None, None)
+124980 18:04:32.011208 Command Completed (socket: True)
+124980 18:04:32.011252 Running command ['getSetVariable', 'BB_CONSOLELOG']
+124980 18:04:32.011311 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222180431.log', None)
+124980 18:04:32.011329 Command Completed (socket: True)
+124980 18:04:32.011347 Running command ['getSetVariable', 'BB_LOGCONFIG']
+124980 18:04:32.011362 Sending reply (None, None)
+124980 18:04:32.011375 Command Completed (socket: True)
+124980 18:04:32.012423 Running command ['getUIHandlerNum']
+124980 18:04:32.012453 Sending reply (1, None)
+124980 18:04:32.012511 Command Completed (socket: True)
+124980 18:04:32.012710 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+124980 18:04:32.012733 Sending reply (True, None)
+124980 18:04:32.012762 Command Completed (socket: True)
+124980 18:04:32.012787 Running command ['getVariable', 'BB_DEFAULT_TASK']
+124980 18:04:32.012802 Sending reply ('build', None)
+124980 18:04:32.012816 Command Completed (socket: True)
+124980 18:04:32.012836 Running command ['setConfig', 'cmd', 'build']
+124980 18:04:32.012849 Sending reply (None, None)
+124980 18:04:32.012861 Command Completed (socket: True)
+124980 18:04:32.012885 Running command ['buildTargets', ['u-boot'], 'build']
+124980 18:04:32.012914 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x719ad9c3f100>>
+124980 18:04:32.012917 Sending reply (True, None)
+124980 18:04:32.012929 Command Completed (socket: True)
+124980 18:04:32.097905 Parsing started
+124980 18:04:33.366282 Parse cache valid
+124980 18:04:34.372682 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x719accaa5430>
+124980 18:04:34.372715 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x719ad9c3f100>>
+124980 18:04:54.795027 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x719accaa5430> at idleFinish
+124980 18:04:55.045719 Processing Client
+124980 18:04:55.045831 Disconnecting Client (socket: True)
+124980 18:04:55.046054 Parse cache invalidated
+124980 18:04:55.046073 No timeout, exiting.
+124980 18:04:55.146412 Exiting (socket: True)
+124980 18:04:55.152118 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+131942 18:09:29.551673 --- Starting bitbake server pid 131942 at 2024-12-22 18:09:29.551657 ---
+131942 18:09:29.552158 Started bitbake server pid 131942
+131942 18:09:29.552277 Entering server connection loop
+131942 18:09:29.552288 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+131942 18:09:29.552643 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+131942 18:09:29.553116 Processing Client
+131942 18:09:29.553143 Connecting Client
+131942 18:09:29.553280 Running command ['setFeatures', [2, 1]]
+131942 18:09:29.553300 Sending reply (None, None)
+131942 18:09:29.553328 Command Completed (socket: True)
+131942 18:09:29.553621 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+131942 18:09:29.777655 Base config valid
+131942 18:09:29.789978 Sending reply (None, None)
+131942 18:09:29.790119 Command Completed (socket: True)
+131942 18:09:29.790270 Running command ['getVariable', 'BBINCLUDELOGS']
+131942 18:09:29.790356 Sending reply ('yes', None)
+131942 18:09:29.790397 Command Completed (socket: True)
+131942 18:09:29.790551 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+131942 18:09:29.790587 Sending reply (None, None)
+131942 18:09:29.790628 Command Completed (socket: True)
+131942 18:09:29.790720 Running command ['getSetVariable', 'BB_CONSOLELOG']
+131942 18:09:29.790816 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222180929.log', None)
+131942 18:09:29.790854 Command Completed (socket: True)
+131942 18:09:29.790948 Running command ['getSetVariable', 'BB_LOGCONFIG']
+131942 18:09:29.790973 Sending reply (None, None)
+131942 18:09:29.791003 Command Completed (socket: True)
+131942 18:09:29.792451 Running command ['getUIHandlerNum']
+131942 18:09:29.792471 Sending reply (1, None)
+131942 18:09:29.792503 Command Completed (socket: True)
+131942 18:09:29.792608 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+131942 18:09:29.792633 Sending reply (True, None)
+131942 18:09:29.792661 Command Completed (socket: True)
+131942 18:09:29.792754 Running command ['getVariable', 'BB_DEFAULT_TASK']
+131942 18:09:29.792773 Sending reply ('build', None)
+131942 18:09:29.792799 Command Completed (socket: True)
+131942 18:09:29.792844 Running command ['setConfig', 'cmd', 'build']
+131942 18:09:29.792866 Sending reply (None, None)
+131942 18:09:29.792893 Command Completed (socket: True)
+131942 18:09:29.792942 Running command ['buildTargets', ['u-boot'], 'build']
+131942 18:09:29.792981 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x742e0f2dd100>>
+131942 18:09:29.792989 Sending reply (True, None)
+131942 18:09:29.793015 Command Completed (socket: True)
+131942 18:09:29.859027 Parsing started
+131942 18:09:31.083846 Parse cache valid
+131942 18:09:31.556145 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x742e0f2dd100>> at idleFinish
+131942 18:09:31.806848 Processing Client
+131942 18:09:31.806949 Disconnecting Client (socket: True)
+131942 18:09:31.807194 Parse cache invalidated
+131942 18:09:31.807215 No timeout, exiting.
+131942 18:09:31.907550 Exiting (socket: True)
+131942 18:09:31.911976 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+131955 18:10:33.141976 --- Starting bitbake server pid 131955 at 2024-12-22 18:10:33.141957 ---
+131955 18:10:33.142541 Started bitbake server pid 131955
+131955 18:10:33.142670 Entering server connection loop
+131955 18:10:33.142682 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+131955 18:10:33.143056 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+131955 18:10:33.143434 Processing Client
+131955 18:10:33.143463 Connecting Client
+131955 18:10:33.143610 Running command ['setFeatures', [2, 1]]
+131955 18:10:33.143630 Sending reply (None, None)
+131955 18:10:33.143658 Command Completed (socket: True)
+131955 18:10:33.143858 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+131955 18:10:33.364256 Base config valid
+131955 18:10:33.375347 Sending reply (None, None)
+131955 18:10:33.375470 Command Completed (socket: True)
+131955 18:10:33.375679 Running command ['getVariable', 'BBINCLUDELOGS']
+131955 18:10:33.375761 Sending reply ('yes', None)
+131955 18:10:33.375794 Command Completed (socket: True)
+131955 18:10:33.375817 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+131955 18:10:33.375831 Sending reply (None, None)
+131955 18:10:33.375845 Command Completed (socket: True)
+131955 18:10:33.375865 Running command ['getSetVariable', 'BB_CONSOLELOG']
+131955 18:10:33.375930 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222181033.log', None)
+131955 18:10:33.375948 Command Completed (socket: True)
+131955 18:10:33.375966 Running command ['getSetVariable', 'BB_LOGCONFIG']
+131955 18:10:33.375980 Sending reply (None, None)
+131955 18:10:33.375993 Command Completed (socket: True)
+131955 18:10:33.377065 Running command ['getUIHandlerNum']
+131955 18:10:33.377088 Sending reply (1, None)
+131955 18:10:33.377117 Command Completed (socket: True)
+131955 18:10:33.377161 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+131955 18:10:33.377176 Sending reply (True, None)
+131955 18:10:33.377191 Command Completed (socket: True)
+131955 18:10:33.377215 Running command ['getVariable', 'BB_DEFAULT_TASK']
+131955 18:10:33.377229 Sending reply ('build', None)
+131955 18:10:33.377242 Command Completed (socket: True)
+131955 18:10:33.377260 Running command ['setConfig', 'cmd', 'build']
+131955 18:10:33.377270 Sending reply (None, None)
+131955 18:10:33.377282 Command Completed (socket: True)
+131955 18:10:33.377303 Running command ['buildTargets', ['u-boot'], 'build']
+131955 18:10:33.377333 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7c962289a100>>
+131955 18:10:33.377336 Sending reply (True, None)
+131955 18:10:33.377347 Command Completed (socket: True)
+131955 18:10:33.450162 Parsing started
+131955 18:10:34.683829 Parse cache valid
+131955 18:10:35.163177 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7c962289a100>> at idleFinish
+131955 18:10:35.414132 Processing Client
+131955 18:10:35.414250 Disconnecting Client (socket: True)
+131955 18:10:35.414524 Parse cache invalidated
+131955 18:10:35.414545 No timeout, exiting.
+131955 18:10:35.514861 Exiting (socket: True)
+131955 18:10:35.518396 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+131968 18:15:27.040928 --- Starting bitbake server pid 131968 at 2024-12-22 18:15:27.040911 ---
+131968 18:15:27.041456 Started bitbake server pid 131968
+131968 18:15:27.041577 Entering server connection loop
+131968 18:15:27.041589 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+131968 18:15:27.041898 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+131968 18:15:27.042320 Processing Client
+131968 18:15:27.042340 Connecting Client
+131968 18:15:27.042495 Running command ['setFeatures', [2, 1]]
+131968 18:15:27.042516 Sending reply (None, None)
+131968 18:15:27.042544 Command Completed (socket: True)
+131968 18:15:27.042790 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+131968 18:15:27.265269 Base config valid
+131968 18:15:27.278721 Sending reply (None, None)
+131968 18:15:27.278857 Command Completed (socket: True)
+131968 18:15:27.278972 Running command ['getVariable', 'BBINCLUDELOGS']
+131968 18:15:27.279035 Sending reply ('yes', None)
+131968 18:15:27.279057 Command Completed (socket: True)
+131968 18:15:27.279081 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+131968 18:15:27.279094 Sending reply (None, None)
+131968 18:15:27.279107 Command Completed (socket: True)
+131968 18:15:27.279127 Running command ['getSetVariable', 'BB_CONSOLELOG']
+131968 18:15:27.279178 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222181527.log', None)
+131968 18:15:27.279195 Command Completed (socket: True)
+131968 18:15:27.279213 Running command ['getSetVariable', 'BB_LOGCONFIG']
+131968 18:15:27.279227 Sending reply (None, None)
+131968 18:15:27.279241 Command Completed (socket: True)
+131968 18:15:27.280339 Running command ['getUIHandlerNum']
+131968 18:15:27.280358 Sending reply (1, None)
+131968 18:15:27.280385 Command Completed (socket: True)
+131968 18:15:27.280430 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+131968 18:15:27.280453 Sending reply (True, None)
+131968 18:15:27.280467 Command Completed (socket: True)
+131968 18:15:27.280516 Running command ['getVariable', 'BB_DEFAULT_TASK']
+131968 18:15:27.280529 Sending reply ('build', None)
+131968 18:15:27.280542 Command Completed (socket: True)
+131968 18:15:27.280568 Running command ['setConfig', 'cmd', 'build']
+131968 18:15:27.280584 Sending reply (None, None)
+131968 18:15:27.280596 Command Completed (socket: True)
+131968 18:15:27.280830 Running command ['buildTargets', ['u-boot'], 'build']
+131968 18:15:27.280892 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7dfdb4b6c100>>
+131968 18:15:27.280902 Sending reply (True, None)
+131968 18:15:27.280946 Command Completed (socket: True)
+131968 18:15:27.342747 Parsing started
+131968 18:15:28.520806 Parse cache valid
+131968 18:15:29.893779 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7dfda3963dc0>
+131968 18:15:29.893816 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7dfdb4b6c100>>
+131968 18:15:32.967947 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7dfda3963dc0> at idleFinish
+131968 18:15:33.218717 Processing Client
+131968 18:15:33.218824 Disconnecting Client (socket: True)
+131968 18:15:33.219072 Parse cache invalidated
+131968 18:15:33.219081 No timeout, exiting.
+131968 18:15:33.319272 Exiting (socket: True)
+131968 18:15:33.323079 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+132790 23:17:57.877888 --- Starting bitbake server pid 132790 at 2024-12-22 23:17:57.877871 ---
+132790 23:17:57.878453 Started bitbake server pid 132790
+132790 23:17:57.878595 Entering server connection loop
+132790 23:17:57.878606 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+132790 23:17:57.878865 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+132790 23:17:57.879290 Processing Client
+132790 23:17:57.879316 Connecting Client
+132790 23:17:57.879470 Running command ['setFeatures', [2, 1]]
+132790 23:17:57.879489 Sending reply (None, None)
+132790 23:17:57.879519 Command Completed (socket: True)
+132790 23:17:57.879901 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+132790 23:17:58.087383 Base config valid
+132790 23:17:58.098727 Sending reply (None, None)
+132790 23:17:58.098825 Command Completed (socket: True)
+132790 23:17:58.098955 Running command ['getVariable', 'BBINCLUDELOGS']
+132790 23:17:58.099011 Sending reply ('yes', None)
+132790 23:17:58.099032 Command Completed (socket: True)
+132790 23:17:58.099083 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+132790 23:17:58.099097 Sending reply (None, None)
+132790 23:17:58.099109 Command Completed (socket: True)
+132790 23:17:58.099130 Running command ['getSetVariable', 'BB_CONSOLELOG']
+132790 23:17:58.099217 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222231757.log', None)
+132790 23:17:58.099234 Command Completed (socket: True)
+132790 23:17:58.099252 Running command ['getSetVariable', 'BB_LOGCONFIG']
+132790 23:17:58.099265 Sending reply (None, None)
+132790 23:17:58.099278 Command Completed (socket: True)
+132790 23:17:58.100405 Running command ['getUIHandlerNum']
+132790 23:17:58.100414 Sending reply (1, None)
+132790 23:17:58.100425 Command Completed (socket: True)
+132790 23:17:58.100474 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+132790 23:17:58.100485 Sending reply (True, None)
+132790 23:17:58.100496 Command Completed (socket: True)
+132790 23:17:58.100521 Running command ['getVariable', 'BB_DEFAULT_TASK']
+132790 23:17:58.100531 Sending reply ('build', None)
+132790 23:17:58.100542 Command Completed (socket: True)
+132790 23:17:58.100559 Running command ['setConfig', 'cmd', 'build']
+132790 23:17:58.100568 Sending reply (None, None)
+132790 23:17:58.100579 Command Completed (socket: True)
+132790 23:17:58.100606 Running command ['buildTargets', ['u-boot'], 'build']
+132790 23:17:58.100629 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x775048adb100>>
+132790 23:17:58.100632 Sending reply (True, None)
+132790 23:17:58.100643 Command Completed (socket: True)
+132790 23:17:58.186743 Parsing started
+132790 23:17:59.385576 Parse cache valid
+132790 23:18:00.686120 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x775037926f70>
+132790 23:18:00.686158 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x775048adb100>>
+132790 23:18:18.873513 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x775037926f70> at idleFinish
+132790 23:18:19.124474 Processing Client
+132790 23:18:19.124554 Disconnecting Client (socket: True)
+132790 23:18:19.124712 Parse cache invalidated
+132790 23:18:19.124720 No timeout, exiting.
+132790 23:18:19.224940 Exiting (socket: True)
+132790 23:18:19.227639 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+136359 23:19:54.151984 --- Starting bitbake server pid 136359 at 2024-12-22 23:19:54.151959 ---
+136359 23:19:54.152699 Started bitbake server pid 136359
+136359 23:19:54.152857 Entering server connection loop
+136359 23:19:54.152873 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+136359 23:19:54.153244 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+136359 23:19:54.153764 Processing Client
+136359 23:19:54.153796 Connecting Client
+136359 23:19:54.153981 Running command ['setFeatures', [2, 1]]
+136359 23:19:54.154004 Sending reply (None, None)
+136359 23:19:54.154037 Command Completed (socket: True)
+136359 23:19:54.154254 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+136359 23:19:54.371959 Base config valid
+136359 23:19:54.383184 Sending reply (None, None)
+136359 23:19:54.383298 Command Completed (socket: True)
+136359 23:19:54.383438 Running command ['getVariable', 'BBINCLUDELOGS']
+136359 23:19:54.383525 Sending reply ('yes', None)
+136359 23:19:54.383585 Command Completed (socket: True)
+136359 23:19:54.383658 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+136359 23:19:54.383683 Sending reply (None, None)
+136359 23:19:54.383715 Command Completed (socket: True)
+136359 23:19:54.383748 Running command ['getSetVariable', 'BB_CONSOLELOG']
+136359 23:19:54.383827 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222231954.log', None)
+136359 23:19:54.383857 Command Completed (socket: True)
+136359 23:19:54.383895 Running command ['getSetVariable', 'BB_LOGCONFIG']
+136359 23:19:54.383920 Sending reply (None, None)
+136359 23:19:54.383943 Command Completed (socket: True)
+136359 23:19:54.385593 Running command ['getUIHandlerNum']
+136359 23:19:54.385624 Sending reply (1, None)
+136359 23:19:54.385659 Command Completed (socket: True)
+136359 23:19:54.385730 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+136359 23:19:54.385754 Sending reply (True, None)
+136359 23:19:54.385776 Command Completed (socket: True)
+136359 23:19:54.385820 Running command ['getVariable', 'BB_DEFAULT_TASK']
+136359 23:19:54.385843 Sending reply ('build', None)
+136359 23:19:54.385861 Command Completed (socket: True)
+136359 23:19:54.385890 Running command ['setConfig', 'cmd', 'build']
+136359 23:19:54.385903 Sending reply (None, None)
+136359 23:19:54.385919 Command Completed (socket: True)
+136359 23:19:54.385954 Running command ['buildTargets', ['u-boot'], 'build']
+136359 23:19:54.385994 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x744a45403100>>
+136359 23:19:54.385999 Sending reply (True, None)
+136359 23:19:54.386017 Command Completed (socket: True)
+136359 23:19:54.459110 Parsing started
+136359 23:19:55.661360 Parse cache valid
+136359 23:19:56.977808 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x744a381e4f70>
+136359 23:19:56.977846 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x744a45403100>>
+136359 23:20:16.656552 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x744a381e4f70> at idleFinish
+136359 23:20:16.907467 Processing Client
+136359 23:20:16.907556 Disconnecting Client (socket: True)
+136359 23:20:16.907761 Parse cache invalidated
+136359 23:20:16.907777 No timeout, exiting.
+136359 23:20:17.008038 Exiting (socket: True)
+136359 23:20:17.011372 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+143351 23:43:54.823025 --- Starting bitbake server pid 143351 at 2024-12-22 23:43:54.823012 ---
+143351 23:43:54.823481 Started bitbake server pid 143351
+143351 23:43:54.823616 Entering server connection loop
+143351 23:43:54.823628 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+143351 23:43:54.823953 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+143351 23:43:54.824294 Processing Client
+143351 23:43:54.824314 Connecting Client
+143351 23:43:54.824455 Running command ['setFeatures', [2, 1]]
+143351 23:43:54.824473 Sending reply (None, None)
+143351 23:43:54.824503 Command Completed (socket: True)
+143351 23:43:54.824704 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+143351 23:43:55.028869 Base config valid
+143351 23:43:55.041102 Sending reply (None, None)
+143351 23:43:55.041254 Command Completed (socket: True)
+143351 23:43:55.041436 Running command ['getVariable', 'BBINCLUDELOGS']
+143351 23:43:55.041534 Sending reply ('yes', None)
+143351 23:43:55.041581 Command Completed (socket: True)
+143351 23:43:55.041725 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+143351 23:43:55.041762 Sending reply (None, None)
+143351 23:43:55.041806 Command Completed (socket: True)
+143351 23:43:55.041904 Running command ['getSetVariable', 'BB_CONSOLELOG']
+143351 23:43:55.042015 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222234354.log', None)
+143351 23:43:55.042057 Command Completed (socket: True)
+143351 23:43:55.042154 Running command ['getSetVariable', 'BB_LOGCONFIG']
+143351 23:43:55.042182 Sending reply (None, None)
+143351 23:43:55.042218 Command Completed (socket: True)
+143351 23:43:55.043796 Running command ['getUIHandlerNum']
+143351 23:43:55.043825 Sending reply (1, None)
+143351 23:43:55.043870 Command Completed (socket: True)
+143351 23:43:55.043987 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+143351 23:43:55.044010 Sending reply (True, None)
+143351 23:43:55.044048 Command Completed (socket: True)
+143351 23:43:55.044111 Running command ['getVariable', 'BB_DEFAULT_TASK']
+143351 23:43:55.044140 Sending reply ('build', None)
+143351 23:43:55.044175 Command Completed (socket: True)
+143351 23:43:55.044219 Running command ['setConfig', 'cmd', 'build']
+143351 23:43:55.044250 Sending reply (None, None)
+143351 23:43:55.044282 Command Completed (socket: True)
+143351 23:43:55.044334 Running command ['buildTargets', ['u-boot'], 'build']
+143351 23:43:55.044387 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x705a67afd100>>
+143351 23:43:55.044395 Sending reply (True, None)
+143351 23:43:55.044425 Command Completed (socket: True)
+143351 23:43:55.128775 Parsing started
+143351 23:43:56.310026 Parse cache valid
+143351 23:43:57.263334 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x705a56ae9670>
+143351 23:43:57.263366 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x705a67afd100>>
+143351 23:44:17.670886 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x705a56ae9670> at idleFinish
+143351 23:44:17.921955 Processing Client
+143351 23:44:17.922050 Disconnecting Client (socket: True)
+143351 23:44:17.922229 Parse cache invalidated
+143351 23:44:17.922252 No timeout, exiting.
+143351 23:44:18.022565 Exiting (socket: True)
+143351 23:44:18.026717 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+150340 23:44:44.387860 --- Starting bitbake server pid 150340 at 2024-12-22 23:44:44.387840 ---
+150340 23:44:44.388396 Started bitbake server pid 150340
+150340 23:44:44.388529 Entering server connection loop
+150340 23:44:44.388541 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+150340 23:44:44.388898 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+150340 23:44:44.389164 Processing Client
+150340 23:44:44.389183 Connecting Client
+150340 23:44:44.389348 Running command ['setFeatures', [2, 1]]
+150340 23:44:44.389367 Sending reply (None, None)
+150340 23:44:44.389400 Command Completed (socket: True)
+150340 23:44:44.389716 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+150340 23:44:44.632199 Base config valid
+150340 23:44:44.646705 Sending reply (None, None)
+150340 23:44:44.646834 Command Completed (socket: True)
+150340 23:44:44.646976 Running command ['getVariable', 'BBINCLUDELOGS']
+150340 23:44:44.647059 Sending reply ('yes', None)
+150340 23:44:44.647091 Command Completed (socket: True)
+150340 23:44:44.647119 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+150340 23:44:44.647133 Sending reply (None, None)
+150340 23:44:44.647147 Command Completed (socket: True)
+150340 23:44:44.647169 Running command ['getSetVariable', 'BB_CONSOLELOG']
+150340 23:44:44.647232 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222234444.log', None)
+150340 23:44:44.647251 Command Completed (socket: True)
+150340 23:44:44.647272 Running command ['getSetVariable', 'BB_LOGCONFIG']
+150340 23:44:44.647288 Sending reply (None, None)
+150340 23:44:44.647303 Command Completed (socket: True)
+150340 23:44:44.648376 Running command ['getUIHandlerNum']
+150340 23:44:44.648390 Sending reply (1, None)
+150340 23:44:44.648410 Command Completed (socket: True)
+150340 23:44:44.648461 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+150340 23:44:44.648475 Sending reply (True, None)
+150340 23:44:44.648489 Command Completed (socket: True)
+150340 23:44:44.648517 Running command ['getVariable', 'BB_DEFAULT_TASK']
+150340 23:44:44.648531 Sending reply ('build', None)
+150340 23:44:44.648544 Command Completed (socket: True)
+150340 23:44:44.648564 Running command ['setConfig', 'cmd', 'build']
+150340 23:44:44.648574 Sending reply (None, None)
+150340 23:44:44.648586 Command Completed (socket: True)
+150340 23:44:44.648610 Running command ['buildTargets', ['u-boot'], 'build']
+150340 23:44:44.648641 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x71c24e5ee100>>
+150340 23:44:44.648645 Sending reply (True, None)
+150340 23:44:44.648659 Command Completed (socket: True)
+150340 23:44:44.694911 Parsing started
+150340 23:44:46.171619 Parse cache valid
+150340 23:44:47.233332 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x71c2414eedc0>
+150340 23:44:47.233368 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x71c24e5ee100>>
+150340 23:45:09.811069 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x71c2414eedc0> at idleFinish
+150340 23:45:10.061789 Processing Client
+150340 23:45:10.061887 Disconnecting Client (socket: True)
+150340 23:45:10.062068 Parse cache invalidated
+150340 23:45:10.062080 No timeout, exiting.
+150340 23:45:10.162284 Exiting (socket: True)
+150340 23:45:10.165346 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+157329 23:45:51.769685 --- Starting bitbake server pid 157329 at 2024-12-22 23:45:51.769667 ---
+157329 23:45:51.770197 Started bitbake server pid 157329
+157329 23:45:51.770321 Entering server connection loop
+157329 23:45:51.770332 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+157329 23:45:51.770746 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+157329 23:45:51.771217 Processing Client
+157329 23:45:51.771235 Connecting Client
+157329 23:45:51.771386 Running command ['setFeatures', [2, 1]]
+157329 23:45:51.771407 Sending reply (None, None)
+157329 23:45:51.771437 Command Completed (socket: True)
+157329 23:45:51.771704 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+157329 23:45:51.996014 Base config valid
+157329 23:45:52.010127 Sending reply (None, None)
+157329 23:45:52.010303 Command Completed (socket: True)
+157329 23:45:52.010484 Running command ['getVariable', 'BBINCLUDELOGS']
+157329 23:45:52.010575 Sending reply ('yes', None)
+157329 23:45:52.010623 Command Completed (socket: True)
+157329 23:45:52.010756 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+157329 23:45:52.010798 Sending reply (None, None)
+157329 23:45:52.010844 Command Completed (socket: True)
+157329 23:45:52.010954 Running command ['getSetVariable', 'BB_CONSOLELOG']
+157329 23:45:52.011056 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222234551.log', None)
+157329 23:45:52.011099 Command Completed (socket: True)
+157329 23:45:52.011195 Running command ['getSetVariable', 'BB_LOGCONFIG']
+157329 23:45:52.011223 Sending reply (None, None)
+157329 23:45:52.011257 Command Completed (socket: True)
+157329 23:45:52.012983 Running command ['getUIHandlerNum']
+157329 23:45:52.013008 Sending reply (1, None)
+157329 23:45:52.013039 Command Completed (socket: True)
+157329 23:45:52.013145 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+157329 23:45:52.013162 Sending reply (True, None)
+157329 23:45:52.013177 Command Completed (socket: True)
+157329 23:45:52.013277 Running command ['getVariable', 'BB_DEFAULT_TASK']
+157329 23:45:52.013292 Sending reply ('build', None)
+157329 23:45:52.013304 Command Completed (socket: True)
+157329 23:45:52.013408 Running command ['setConfig', 'cmd', 'build']
+157329 23:45:52.013419 Sending reply (None, None)
+157329 23:45:52.013430 Command Completed (socket: True)
+157329 23:45:52.013586 Running command ['buildTargets', ['u-boot'], 'build']
+157329 23:45:52.013631 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x70fe7ffee100>>
+157329 23:45:52.013636 Sending reply (True, None)
+157329 23:45:52.013663 Command Completed (socket: True)
+157329 23:45:52.071948 Parsing started
+157329 23:45:53.358607 Parse cache valid
+157329 23:45:54.440955 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x70fe6f324e50>
+157329 23:45:54.440993 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x70fe7ffee100>>
+157329 23:46:14.940873 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x70fe6f324e50> at idleFinish
+157329 23:46:15.191707 Processing Client
+157329 23:46:15.191810 Disconnecting Client (socket: True)
+157329 23:46:15.192035 Parse cache invalidated
+157329 23:46:15.192062 No timeout, exiting.
+157329 23:46:15.292410 Exiting (socket: True)
+157329 23:46:15.296614 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+164318 23:51:33.910243 --- Starting bitbake server pid 164318 at 2024-12-22 23:51:33.910228 ---
+164318 23:51:33.910739 Started bitbake server pid 164318
+164318 23:51:33.910878 Entering server connection loop
+164318 23:51:33.910894 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+164318 23:51:33.911230 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+164318 23:51:33.911546 Processing Client
+164318 23:51:33.911567 Connecting Client
+164318 23:51:33.911718 Running command ['setFeatures', [2, 1]]
+164318 23:51:33.911735 Sending reply (None, None)
+164318 23:51:33.911762 Command Completed (socket: True)
+164318 23:51:33.911970 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'u-boot']]
+164318 23:51:34.129403 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 173202 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 173287 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 7
+Client pids: 173682 173683 173730 173780 173784 173737 173785 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 173682 
+Server will shut down after all clients exit.
+164318 23:51:34.141613 Sending reply (None, None)
+164318 23:51:34.141716 Command Completed (socket: True)
+164318 23:51:34.141937 Running command ['getVariable', 'BBINCLUDELOGS']
+164318 23:51:34.141995 Sending reply ('yes', None)
+164318 23:51:34.142015 Command Completed (socket: True)
+164318 23:51:34.142099 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+164318 23:51:34.142110 Sending reply (None, None)
+164318 23:51:34.142122 Command Completed (socket: True)
+164318 23:51:34.142221 Running command ['getSetVariable', 'BB_CONSOLELOG']
+164318 23:51:34.142278 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222235133.log', None)
+164318 23:51:34.142296 Command Completed (socket: True)
+164318 23:51:34.142328 Running command ['getSetVariable', 'BB_LOGCONFIG']
+164318 23:51:34.142341 Sending reply (None, None)
+164318 23:51:34.142354 Command Completed (socket: True)
+164318 23:51:34.143454 Running command ['getUIHandlerNum']
+164318 23:51:34.143473 Sending reply (1, None)
+164318 23:51:34.143493 Command Completed (socket: True)
+164318 23:51:34.143647 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+164318 23:51:34.143660 Sending reply (True, None)
+164318 23:51:34.143671 Command Completed (socket: True)
+164318 23:51:34.143700 Running command ['getVariable', 'BB_DEFAULT_TASK']
+164318 23:51:34.143711 Sending reply ('build', None)
+164318 23:51:34.143722 Command Completed (socket: True)
+164318 23:51:34.143738 Running command ['setConfig', 'cmd', 'build']
+164318 23:51:34.143750 Sending reply (None, None)
+164318 23:51:34.143760 Command Completed (socket: True)
+164318 23:51:34.143782 Running command ['buildTargets', ['u-boot'], 'build']
+164318 23:51:34.143805 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7e1bc59db100>>
+164318 23:51:34.143807 Sending reply (True, None)
+164318 23:51:34.143818 Command Completed (socket: True)
+164318 23:51:34.217102 Parsing started
+164318 23:51:35.389967 Parse cache valid
+164318 23:51:36.403362 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7e1bb9351c10>
+164318 23:51:36.403397 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7e1bc59db100>>
+164318 23:52:03.284281 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7e1bb9351c10> at idleFinish
+164318 23:52:03.535277 Processing Client
+164318 23:52:03.535378 Disconnecting Client (socket: True)
+164318 23:52:03.535626 Parse cache invalidated
+164318 23:52:03.535635 No timeout, exiting.
+164318 23:52:03.635894 Exiting (socket: True)
+164318 23:52:03.640976 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+173965 23:53:52.060617 --- Starting bitbake server pid 173965 at 2024-12-22 23:53:52.060597 ---
+173965 23:53:52.061132 Started bitbake server pid 173965
+173965 23:53:52.061253 Entering server connection loop
+173965 23:53:52.061264 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+173965 23:53:52.061572 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+173965 23:53:52.062091 Processing Client
+173965 23:53:52.062121 Connecting Client
+173965 23:53:52.062282 Running command ['setFeatures', [2, 1]]
+173965 23:53:52.062302 Sending reply (None, None)
+173965 23:53:52.062335 Command Completed (socket: True)
+173965 23:53:52.062533 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'core-image-minimalk']]
+173965 23:53:52.307886 Base config valid
+173965 23:53:52.319513 Sending reply (None, None)
+173965 23:53:52.319636 Command Completed (socket: True)
+173965 23:53:52.319855 Running command ['getVariable', 'BBINCLUDELOGS']
+173965 23:53:52.319924 Sending reply ('yes', None)
+173965 23:53:52.319956 Command Completed (socket: True)
+173965 23:53:52.320046 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+173965 23:53:52.320062 Sending reply (None, None)
+173965 23:53:52.320077 Command Completed (socket: True)
+173965 23:53:52.320184 Running command ['getSetVariable', 'BB_CONSOLELOG']
+173965 23:53:52.320253 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222235352.log', None)
+173965 23:53:52.320271 Command Completed (socket: True)
+173965 23:53:52.320361 Running command ['getSetVariable', 'BB_LOGCONFIG']
+173965 23:53:52.320375 Sending reply (None, None)
+173965 23:53:52.320389 Command Completed (socket: True)
+173965 23:53:52.321519 Running command ['getUIHandlerNum']
+173965 23:53:52.321531 Sending reply (1, None)
+173965 23:53:52.321543 Command Completed (socket: True)
+173965 23:53:52.321671 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+173965 23:53:52.321682 Sending reply (True, None)
+173965 23:53:52.321693 Command Completed (socket: True)
+173965 23:53:52.321727 Running command ['getVariable', 'BB_DEFAULT_TASK']
+173965 23:53:52.321738 Sending reply ('build', None)
+173965 23:53:52.321749 Command Completed (socket: True)
+173965 23:53:52.321769 Running command ['setConfig', 'cmd', 'build']
+173965 23:53:52.321780 Sending reply (None, None)
+173965 23:53:52.321791 Command Completed (socket: True)
+173965 23:53:52.321816 Running command ['buildTargets', ['core-image-minimalk'], 'build']
+173965 23:53:52.321844 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x728402b16100>>
+173965 23:53:52.321848 Sending reply (True, None)
+173965 23:53:52.321859 Command Completed (socket: True)
+173965 23:53:52.368207 Parsing started
+173965 23:53:53.611294 Parse cache valid
+173965 23:53:53.914128 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x728402b16100>> at idleFinish
+173965 23:53:54.164980 Processing Client
+173965 23:53:54.165134 Disconnecting Client (socket: True)
+173965 23:53:54.165464 Parse cache invalidated
+173965 23:53:54.165492 No timeout, exiting.
+173965 23:53:54.265856 Exiting (socket: True)
+173965 23:53:54.270291 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+173975 23:53:55.364748 --- Starting bitbake server pid 173975 at 2024-12-22 23:53:55.364733 ---
+173975 23:53:55.365223 Started bitbake server pid 173975
+173975 23:53:55.365332 Entering server connection loop
+173975 23:53:55.365342 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+173975 23:53:55.365714 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+173975 23:53:55.366329 Processing Client
+173975 23:53:55.366356 Connecting Client
+173975 23:53:55.366511 Running command ['setFeatures', [2, 1]]
+173975 23:53:55.366530 Sending reply (None, None)
+173975 23:53:55.366559 Command Completed (socket: True)
+173975 23:53:55.366884 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '8c28b9edacee', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+173975 23:53:55.579921 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 193415 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 195558 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 196504 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 199722 199729 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 199722 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 199725 199726 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 199726 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 199727 199728 202510 202511 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 199727 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 205619 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 212003 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 212058 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 212084 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 212162 
+Server will shut down after all clients exit.
+173975 23:53:55.592101 Sending reply (None, None)
+173975 23:53:55.592252 Command Completed (socket: True)
+173975 23:53:55.592396 Running command ['getVariable', 'BBINCLUDELOGS']
+173975 23:53:55.592495 Sending reply ('yes', None)
+173975 23:53:55.592543 Command Completed (socket: True)
+173975 23:53:55.592694 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+173975 23:53:55.592732 Sending reply (None, None)
+173975 23:53:55.592778 Command Completed (socket: True)
+173975 23:53:55.592835 Running command ['getSetVariable', 'BB_CONSOLELOG']
+173975 23:53:55.592943 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241222235355.log', None)
+173975 23:53:55.592988 Command Completed (socket: True)
+173975 23:53:55.593038 Running command ['getSetVariable', 'BB_LOGCONFIG']
+173975 23:53:55.593066 Sending reply (None, None)
+173975 23:53:55.593102 Command Completed (socket: True)
+173975 23:53:55.594708 Running command ['getUIHandlerNum']
+173975 23:53:55.594742 Sending reply (1, None)
+173975 23:53:55.594789 Command Completed (socket: True)
+173975 23:53:55.594874 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+173975 23:53:55.594904 Sending reply (True, None)
+173975 23:53:55.594943 Command Completed (socket: True)
+173975 23:53:55.595000 Running command ['getVariable', 'BB_DEFAULT_TASK']
+173975 23:53:55.595033 Sending reply ('build', None)
+173975 23:53:55.595067 Command Completed (socket: True)
+173975 23:53:55.595115 Running command ['setConfig', 'cmd', 'build']
+173975 23:53:55.595140 Sending reply (None, None)
+173975 23:53:55.595172 Command Completed (socket: True)
+173975 23:53:55.595226 Running command ['buildTargets', ['core-image-minimal'], 'build']
+173975 23:53:55.595273 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x70e0f02a2100>>
+173975 23:53:55.595281 Sending reply (True, None)
+173975 23:53:55.595312 Command Completed (socket: True)
+173975 23:53:55.671378 Parsing started
+173975 23:53:56.879378 Parse cache valid
+173975 23:53:58.184114 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x70e0df32c940>
+173975 23:53:58.184148 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x70e0f02a2100>>
+173975 23:55:06.455629 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x70e0df32c940> at idleFinish
+173975 23:55:06.706485 Processing Client
+173975 23:55:06.706588 Disconnecting Client (socket: True)
+173975 23:55:06.706792 Parse cache invalidated
+173975 23:55:06.706813 No timeout, exiting.
+173975 23:55:06.807070 Exiting (socket: True)
+173975 23:55:06.811125 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>

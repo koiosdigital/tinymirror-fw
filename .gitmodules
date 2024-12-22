@@ -10,3 +10,7 @@
 [submodule "meta-rockchip"]
 	path = meta-rockchip
 	url = https://git.yoctoproject.org/meta-rockchip
+[submodule "meta-orangepi"]
+	path = meta-orangepi
+	url = https://github.com/acvigue/meta-orangepi
+	branch = styhead
