@@ -1,15 +1,9 @@
 [submodule "poky"]
 	path = poky
 	url = git://git.yoctoproject.org/poky.git
-[submodule "meta-rockchip"]
-	path = meta-rockchip
-	url = https://github.com/acvigue/meta-rockchip
 [submodule "meta-openembedded"]
 	path = meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded.git
 [submodule "meta-arm"]
 	path = meta-arm
 	url = https://git.yoctoproject.org/meta-arm
-[submodule "meta-rockchip2"]
-	path = meta-rockchip2
-	url = https://git.yoctoproject.org/meta-rockchip
