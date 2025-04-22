@@ -6038,3 +6038,175 @@ Server will shut down after all clients exit.
 173975 23:55:06.807070 Exiting (socket: True)
 173975 23:55:06.811125 Exiting as we could obtain the lock
 sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+41 01:24:00.356463 --- Starting bitbake server pid 41 at 2024-12-24 01:24:00.356441 ---
+41 01:24:00.356964 Started bitbake server pid 41
+41 01:24:00.357085 Entering server connection loop
+41 01:24:00.357096 Lockfile is: /home/build/work/tinymirror-fw/bitbake.lock
+Socket is /home/build/work/tinymirror-fw/bitbake.sock (True)
+41 01:24:00.357358 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+41 01:24:00.357973 Processing Client
+41 01:24:00.358003 Connecting Client
+41 01:24:00.358166 Running command ['setFeatures', [2, 1]]
+41 01:24:00.358187 Sending reply (None, None)
+41 01:24:00.358218 Command Completed (socket: True)
+41 01:24:00.358456 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/build/work/tinymirror-fw', 'HOME': '/home/build', 'BBPATH': '/home/build/work/tinymirror-fw', 'PATH': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LC_ALL': 'en_US.UTF-8', 'OE_ADDED_PATHS': '/home/build/work/tinymirror-fw/poky/scripts:/home/build/work/tinymirror-fw/poky/bitbake/bin:', 'HOSTNAME': '23fb48d91b39', 'LANG': 'en_US.utf8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/build/work/tinymirror-fw/poky/bitbake/lib:', 'TERM': 'xterm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'BUILDDIR': '/home/build/work/tinymirror-fw', 'OLDPWD': '/home/build/work/tinymirror-fw', '_': '/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake'}, ['/home/build/work/tinymirror-fw/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+41 01:24:00.605439 Base config valid
+41 01:24:00.619559 Sending reply (None, None)
+41 01:24:00.619666 Command Completed (socket: True)
+41 01:24:00.619880 Running command ['getVariable', 'BBINCLUDELOGS']
+41 01:24:00.619951 Sending reply ('yes', None)
+41 01:24:00.619987 Command Completed (socket: True)
+41 01:24:00.620095 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+41 01:24:00.620113 Sending reply (None, None)
+41 01:24:00.620134 Command Completed (socket: True)
+41 01:24:00.620236 Running command ['getSetVariable', 'BB_CONSOLELOG']
+41 01:24:00.620323 Sending reply ('/home/build/work/tinymirror-fw/tmp/log/cooker/orangepi-cm4/20241224012400.log', None)
+41 01:24:00.620367 Command Completed (socket: True)
+41 01:24:00.620508 Running command ['getSetVariable', 'BB_LOGCONFIG']
+41 01:24:00.620531 Sending reply (None, None)
+41 01:24:00.620556 Command Completed (socket: True)
+41 01:24:00.622081 Running command ['getUIHandlerNum']
+41 01:24:00.622093 Sending reply (1, None)
+41 01:24:00.622109 Command Completed (socket: True)
+41 01:24:00.622151 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+41 01:24:00.622162 Sending reply (True, None)
+41 01:24:00.622174 Command Completed (socket: True)
+41 01:24:00.622199 Running command ['getVariable', 'BB_DEFAULT_TASK']
+41 01:24:00.622210 Sending reply ('build', None)
+41 01:24:00.622221 Command Completed (socket: True)
+41 01:24:00.622241 Running command ['setConfig', 'cmd', 'build']
+41 01:24:00.622255 Sending reply (None, None)
+41 01:24:00.622265 Command Completed (socket: True)
+41 01:24:00.622287 Running command ['buildTargets', ['core-image-minimal'], 'build']
+41 01:24:00.622312 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7325899b3100>>
+41 01:24:00.622314 Sending reply (True, None)
+41 01:24:00.622325 Command Completed (socket: True)
+41 01:24:00.664815 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 21328 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 47281 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44394 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 89054 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 89687 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 93998 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 98744 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 98941 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 116685 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 116695 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 119960 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123052 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123085 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123381 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123403 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123728 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123786 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 118774 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123295 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123446 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 124370 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123588 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123987 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123508 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 123886 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 124301 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 129499 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 119214 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 133903 133910 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 133903 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 133714 133749 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 133749 
+Server will shut down after all clients exit.
+41 01:24:00.762649 Parse cache valid
+41 01:24:31.121395 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x73258302f280>
+41 01:24:31.121429 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7325899b3100>>
+41 01:27:40.643695 Running command ['stateShutdown']
+41 01:27:40.643815 Sending reply (None, None)
+41 01:27:40.643909 Command Completed (socket: True)
+41 01:27:42.555683 Running command ['stateForceShutdown']
+41 01:27:42.555757 Sending reply (None, None)
+41 01:27:42.555811 Command Completed (socket: True)
+41 01:27:42.851268 Processing Client
+41 01:27:42.851364 Disconnecting Client (socket: True)
+41 01:27:44.280670 Exception Traceback (most recent call last):
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/server/process.py", line 435, in idle_thread_internal
+    retval = function(self, data, False)
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/cooker.py", line 1491, in buildTargetsIdle
+    retval = rq.execute_runqueue()
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/runqueue.py", line 1652, in execute_runqueue
+    return self._execute_runqueue()
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/runqueue.py", line 1556, in _execute_runqueue
+    bb.event.check_for_interrupts(self.cooker.data)
+  File "/home/build/work/tinymirror-fw/poky/bitbake/lib/bb/event.py", line 97, in check_for_interrupts
+    raise bb.BBHandledException()
+bb.BBHandledException
+ broke the idle_thread, exiting
+41 01:28:12.851643 Idle loop didn't finish queued commands after 30s, exiting.
+41 01:28:12.851857 Parse cache invalidated
+41 01:28:12.851872 No timeout, exiting.
+41 01:28:12.851888 Idle thread terminated, main thread exiting too
+41 01:28:12.952246 Exiting (socket: True)
+41 01:28:12.958244 Exiting as we could obtain the lock
+ERROR: Idle thread terminated, main thread exiting too
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/build/work/tinymirror-fw/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>

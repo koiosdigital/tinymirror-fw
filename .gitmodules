@@ -14,3 +14,7 @@
 	path = meta-orangepi
 	url = https://github.com/acvigue/meta-orangepi
 	branch = styhead
+[submodule "meta-rauc"]
+	path = meta-rauc
+	url = https://github.com/rauc/meta-rauc
+	branch = styhead
