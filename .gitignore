@@ -3,3 +3,7 @@ tmp
 cache
 sstate-cache
 downloads
+bitbake-cookerdaemon.log
+*.log
+*.lock
+*.sock
