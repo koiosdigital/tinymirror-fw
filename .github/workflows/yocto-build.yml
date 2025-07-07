@@ -4,11 +4,10 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: kd-xxl
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
