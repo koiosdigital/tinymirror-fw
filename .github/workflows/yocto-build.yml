@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: [self-hosted, kd-xxl]
+    runs-on: kd-xxl
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
