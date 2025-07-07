@@ -1,4 +1,4 @@
-name: Yocto Build
+name: Poky!
 
 on:
   push:
